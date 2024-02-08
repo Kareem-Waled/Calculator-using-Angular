@@ -1,0 +1,141 @@
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #youtube-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #youtube-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 40px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+
+.container{
+    width:340px;
+    height:460px ;
+    margin: 100px auto;
+    border:solid 1px rgba(46, 46, 46, 0.788);
+    border-radius: 3px;
+    .output{
+        background-color: rgba(0, 0, 0, 0.863) ;
+        color: white;
+        font-size: 60px;
+        direction: rtl;
+        span{
+            width: 100%;
+            margin-right: 20px;
+        }
+    }
+    table{
+        border-spacing: 20px;
+        td {
+            cursor: pointer;
+            text-align: center;
+            border-radius: 3px;
+            font-size: 25px;
+            &:not(.equal ){
+                width: 70px;
+                height: 50px;
+                border: solid 1px rgb(184, 178, 178);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px -10px 36px -30px inset;
+                
+            }
+            &.equal{
+                width: 70px;
+                height: 220px;
+                background-color: rgb(33, 129, 185);
+                color: white;
+            }
+            &.reset{
+                background-color: rgb(221, 81, 81);
+                color: white;
+            }
+            &.operators{
+                color:rgb(33, 129, 185) ;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
